@@ -1,0 +1,9 @@
+Package: aurora-make
+Version: 4.4.1-1
+Architecture: musl-linux-amd64
+Maintainer: Aurora Developers
+Description: make built from pinned source inside Aurora
+Filename: pool/aurora-make_4.4.1-1_musl-linux-amd64.deb
+Size: 382338
+SHA256: 5a8bb4b3d29f55b4826f455333aeaf4a9a93d1c4d3c7aa3ad2c1ae6239d01345
+

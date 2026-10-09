@@ -1,0 +1,15 @@
+<!doctype html>
+<meta charset="utf-8"><title>Aurora packages</title>
+<h1>Aurora packages</h1>
+<p>Candidate native packages for Aurora OS, built for musl-linux-amd64.</p>
+<h2>Install repository metadata</h2>
+<pre>curl -fsSL https://&lt;owner&gt;.github.io/&lt;repository&gt;/apt/dists/aurora/Release</pre>
+<p>After adding this URL to an authenticated APT configuration, install with
+<code>apt install aurora-make</code>, or download a package directly from
+<code>apt/pool/</code>.</p>
+<p>The repository is unsigned. Authenticate <code>Release.sha256</code> or use a signed
+release policy before installing packages. APT metadata is under <a href="apt/">apt/</a>.</p>
+<h2>Downloads and sources</h2>
+<p>See <a href="release-manifest.json">release-manifest.json</a> for package hashes and
+<a href="sources/index.json">sources/index.json</a> for pinned source URLs, versions,
+hashes and licenses. Source archives are not mirrored by this generator.</p>

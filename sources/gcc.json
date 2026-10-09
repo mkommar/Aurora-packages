@@ -1,0 +1,24 @@
+{
+  "archive": "gcc-11.5.0.tar.xz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "xz",
+    "binutils",
+    "gmp",
+    "mpfr",
+    "mpc",
+    "bootstrap-g++"
+  ],
+  "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+  "name": "gcc",
+  "recipe": "gcc",
+  "runtime_dependencies": [],
+  "sha256": "a6e21868ead545cf87f0c01f84276e4b5281d672098591c1c896241f09363478",
+  "url": "https://ftp.gnu.org/gnu/gcc/gcc-11.5.0/gcc-11.5.0.tar.xz",
+  "version": "11.5.0"
+}

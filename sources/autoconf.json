@@ -1,0 +1,23 @@
+{
+  "archive": "autoconf-2.71.tar.gz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "m4",
+    "perl"
+  ],
+  "license": "GPL-3.0-or-later",
+  "name": "autoconf",
+  "recipe": "autotools",
+  "runtime_dependencies": [
+    "m4",
+    "perl"
+  ],
+  "sha256": "431075ad0bf529ef13cb41e9042c542381103e80015686222b8a9d4abef42a1c",
+  "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.gz",
+  "version": "2.71"
+}

@@ -1,0 +1,18 @@
+{
+  "archive": "patch-2.7.6.tar.gz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip"
+  ],
+  "license": "GPL-3.0-or-later",
+  "name": "patch",
+  "recipe": "autotools",
+  "runtime_dependencies": [],
+  "sha256": "8cf86e00ad3aaa6d26aca30640e86b0e3e1f395ed99f189b06d4c9f74bc58a4e",
+  "url": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.gz",
+  "version": "2.7.6"
+}

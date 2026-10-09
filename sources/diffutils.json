@@ -1,0 +1,19 @@
+{
+  "archive": "diffutils-3.10.tar.xz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "xz"
+  ],
+  "license": "GPL-3.0-or-later",
+  "name": "diffutils",
+  "recipe": "autotools",
+  "runtime_dependencies": [],
+  "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e",
+  "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+  "version": "3.10"
+}

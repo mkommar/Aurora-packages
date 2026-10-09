@@ -1,0 +1,19 @@
+{
+  "archive": "gmp-6.3.0.tar.xz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "xz"
+  ],
+  "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+  "name": "gmp",
+  "recipe": "autotools",
+  "runtime_dependencies": [],
+  "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+  "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+  "version": "6.3.0"
+}

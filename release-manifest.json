@@ -1,0 +1,22 @@
+{
+  "apt": {
+    "packages": "apt/dists/aurora/main/binary-musl-linux-amd64/Packages",
+    "pool": "apt/pool",
+    "release": "apt/dists/aurora/Release"
+  },
+  "generator": "packages/generate-pages.py",
+  "packages": [
+    {
+      "architecture": "musl-linux-amd64",
+      "filename": "aurora-make_4.4.1-1_musl-linux-amd64.deb",
+      "package": "aurora-make",
+      "path": "apt/pool/aurora-make_4.4.1-1_musl-linux-amd64.deb",
+      "sha256": "5a8bb4b3d29f55b4826f455333aeaf4a9a93d1c4d3c7aa3ad2c1ae6239d01345",
+      "size": 382338,
+      "version": "4.4.1-1"
+    }
+  ],
+  "schema": 1,
+  "source_index": "sources/index.json",
+  "source_lock_sha256": "43d7289b95d5a1adce540ab7b0ab844c9659615b89bd82c2c212b0e42ff32e22"
+}

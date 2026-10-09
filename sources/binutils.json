@@ -1,0 +1,20 @@
+{
+  "archive": "binutils-2.43.1.tar.xz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "xz",
+    "zlib"
+  ],
+  "license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+  "name": "binutils",
+  "recipe": "autotools",
+  "runtime_dependencies": [],
+  "sha256": "13f74202a3c4c51118b797a39ea4200d3f6cfbe224da6d1d95bb938480132dfd",
+  "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.xz",
+  "version": "2.43.1"
+}

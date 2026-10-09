@@ -1,0 +1,18 @@
+{
+  "archive": "m4-1.4.19.tar.gz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip"
+  ],
+  "license": "GPL-3.0-or-later",
+  "name": "m4",
+  "recipe": "autotools",
+  "runtime_dependencies": [],
+  "sha256": "3be4a26d825ffdfda52a56fc43246456989a3630093cced3fbddf4771ee58a70",
+  "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.gz",
+  "version": "1.4.19"
+}

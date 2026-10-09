@@ -1,0 +1,23 @@
+{
+  "archive": "automake-1.16.5.tar.gz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "autoconf",
+    "perl"
+  ],
+  "license": "GPL-2.0-or-later",
+  "name": "automake",
+  "recipe": "autotools",
+  "runtime_dependencies": [
+    "autoconf",
+    "perl"
+  ],
+  "sha256": "07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605",
+  "url": "https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.gz",
+  "version": "1.16.5"
+}

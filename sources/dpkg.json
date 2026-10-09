@@ -1,0 +1,25 @@
+{
+  "archive": "dpkg_1.22.22.tar.xz",
+  "build_dependencies": [
+    "bootstrap-gcc",
+    "bootstrap-bash",
+    "bootstrap-make",
+    "bootstrap-coreutils",
+    "bootstrap-tar",
+    "bootstrap-gzip",
+    "xz",
+    "perl",
+    "libmd",
+    "bootstrap-g++",
+    "patch"
+  ],
+  "license": "GPL-2.0-or-later",
+  "name": "dpkg",
+  "recipe": "autotools",
+  "runtime_dependencies": [
+    "perl"
+  ],
+  "sha256": "d5ea9f132deec8030b50ab2a02ade2b49f0c7a195805a302c8301156fe833a57",
+  "url": "https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.22.tar.xz",
+  "version": "1.22.22"
+}

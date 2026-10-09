@@ -1,0 +1,9 @@
+Origin: Aurora
+Label: Aurora native packages
+Suite: aurora
+Codename: aurora
+Architectures: musl-linux-amd64
+Components: main
+SHA256:
+ 0b790db733f4bad6bb8c18141ff0ea5a958601186daed0ddcb2fe513e6f822de 299 dists/aurora/main/binary-musl-linux-amd64/Packages
+ 62aa546c9a1ef8ff6c58775e48c676c04ca3b48a569a50afba10096bb7fdd3af 246 dists/aurora/main/binary-musl-linux-amd64/Packages.gz

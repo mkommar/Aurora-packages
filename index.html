@@ -1,15 +1,29 @@
 <!doctype html>
-<meta charset="utf-8"><title>Aurora packages</title>
-<h1>Aurora packages</h1>
-<p>Candidate native packages for Aurora OS, built for musl-linux-amd64.</p>
-<h2>Install repository metadata</h2>
-<pre>curl -fsSL https://&lt;owner&gt;.github.io/&lt;repository&gt;/apt/dists/aurora/Release</pre>
-<p>After adding this URL to an authenticated APT configuration, install with
-<code>apt install aurora-make</code>, or download a package directly from
-<code>apt/pool/</code>.</p>
-<p>The repository is unsigned. Authenticate <code>Release.sha256</code> or use a signed
-release policy before installing packages. APT metadata is under <a href="apt/">apt/</a>.</p>
-<h2>Downloads and sources</h2>
-<p>See <a href="release-manifest.json">release-manifest.json</a> for package hashes and
-<a href="sources/index.json">sources/index.json</a> for pinned source URLs, versions,
-hashes and licenses. Source archives are not mirrored by this generator.</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aurora is a small, inspectable x86-64 operating system for deterministic systems work.">
+  <meta name="theme-color" content="#0b1019">
+  <title>Aurora OS | Systems you can inspect</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Aurora home"><img src="assets/mark.svg" alt=""><span>AURORA<small>OPERATING SYSTEM</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><a data-nav="home" href="index.html">Overview</a><a data-nav="capabilities" href="capabilities.html">Capabilities</a><a data-nav="architecture" href="architecture.html">Architecture</a><a data-nav="roadmap" href="roadmap.html">Roadmap</a><a data-nav="comparison" href="comparison.html">Compare</a><a data-nav="builders" href="builders.html">For builders</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> x86-64 · BIOS · QEMU-first</p><h1>A small OS with nowhere to hide.</h1><p class="lede">Aurora is an original operating system built for people who want to understand the whole machine: from boot sector to package archive, with boundaries you can trace.</p><div class="button-row"><a class="button button-primary" href="capabilities.html">Explore the system <span>↗</span></a><a class="text-link" href="architecture.html">Read the architecture <span>→</span></a></div><p class="hero-note"><strong>Current posture:</strong> a working, documented QEMU target, not a desktop replacement.</p></div><div class="hero-visual" aria-label="Animated concept view of an Aurora system booting"><div class="scanline"></div><div class="boot-window"><div class="window-bar"><span class="window-title">aurora // boot trace</span><span class="window-lights"><i></i><i></i><i></i></span></div><div class="boot-body"><div class="boot-logo">A<span>·</span></div><p>loading kernel image <b>ok</b></p><p>starting ring-3 services <b>ok</b></p><p>mounting aurorafs <b>ok</b></p><p>network link <b class="muted">qemu-net</b></p><div class="boot-progress"><span></span></div><small>guest ready / 00:00:04.812</small></div></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="signal signal-a">IPC <b>84</b></div><div class="signal signal-b">PAGING <b>ON</b></div></div></section>
+    <section class="proof-strip"><div class="shell proof-grid"><div><span class="metric">01</span><strong>One bounded target</strong><small>BIOS boot and QEMU are the honest center of gravity.</small></div><div><span class="metric">03</span><strong>Clear privilege line</strong><small>Kernel, services, and native apps have named jobs.</small></div><div><span class="metric">∞</span><strong>Inspectable by design</strong><small>Source, tests, package locks, and limitations stay visible.</small></div></div></section>
+    <section class="shell section split-section"><div><p class="eyebrow">The premise</p><h2>Make the boundary the product.</h2></div><div class="section-copy"><p>Most operating systems are impressive because of their scale. Aurora is interesting because of its shape: a deliberately narrow x86-64 system where process address spaces, IPC checks, paging, scheduling, filesystems, and the compatibility ABI can be studied as one connected artifact.</p><p>It is not trying to win a feature checklist. It is trying to make the difficult parts legible.</p><a class="text-link" href="capabilities.html">See what exists today <span>→</span></a></div></section>
+    <section class="shell section"><div class="section-heading"><div><p class="eyebrow">A guided tour</p><h2>Six views of one machine.</h2></div><span class="section-index">/ 01—06</span></div><div class="card-grid six-grid"><a class="feature-card" href="capabilities.html"><span class="card-kicker">01 / runtime</span><h3>Capabilities</h3><p>Boot, isolation, networking, storage, packages. See what is implemented and where.</p><span class="card-arrow">↗</span></a><a class="feature-card" href="architecture.html"><span class="card-kicker">02 / internals</span><h3>Architecture</h3><p>Trace a process from address space to capability-checked service call.</p><span class="card-arrow">↗</span></a><a class="feature-card" href="roadmap.html"><span class="card-kicker">03 / next</span><h3>Roadmap</h3><p>P0 through P4, with dependencies, gates, and a reason for every step.</p><span class="card-arrow">↗</span></a><a class="feature-card" href="comparison.html"><span class="card-kicker">04 / context</span><h3>Comparison</h3><p>A fair read beside Windows 11 and Ubuntu Linux. Different goals, different scale.</p><span class="card-arrow">↗</span></a><a class="feature-card" href="builders.html"><span class="card-kicker">05 / practice</span><h3>For builders</h3><p>How to run the target, build packages, and contribute without guesswork.</p><span class="card-arrow">↗</span></a><div class="feature-card feature-card-accent"><span class="card-kicker">06 / status</span><h3>Honest scope</h3><p>QEMU-first is a constraint, not a footnote. Hardware breadth comes later.</p><span class="card-arrow">→</span></div></div></section>
+    <section class="shell section demo-section"><div class="section-heading"><div><p class="eyebrow">Concept demo</p><h2>Watch the system think.</h2></div><span class="pill pill-concept">ANIMATED CONCEPT</span></div><div class="demo-frame"><div class="demo-chrome"><span>aurora / system monitor</span><span class="live"><i></i> LIVE SIMULATION</span></div><div class="demo-content"><div class="demo-copy"><p class="eyebrow">A visual, not a recording</p><h3>Four seconds from BIOS to a bounded world.</h3><p>This self-contained animation communicates the boot sequence and service boundary. It is not a captured Aurora session or a claim of desktop support.</p><a class="text-link" href="architecture.html">Understand the real path <span>→</span></a></div><div class="pulse-map"><div class="pulse-node node-kernel">KERNEL<span>ring 0</span></div><div class="pulse-node node-services">SERVICES<span>ring 3</span></div><div class="pulse-node node-apps">APPS<span>native ABI</span></div><div class="pulse-line line-one"></div><div class="pulse-line line-two"></div><div class="pulse-packet packet-one">IPC</div><div class="pulse-packet packet-two">CAP</div></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><a class="brand" href="index.html"><img src="assets/mark.svg" alt=""><span>AURORA<small>OPERATING SYSTEM</small></span></a><p class="footer-note">An original x86-64 OS project. Narrow by choice.</p></div><div class="footer-links"><a href="README.md">Project notes</a><a href="release-manifest.json">Package manifest</a><a href="apt/">APT tree</a></div></div></footer>
+</body>
+</html>
